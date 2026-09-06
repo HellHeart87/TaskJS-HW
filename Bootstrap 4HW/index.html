@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPortal — Академический дашборд</title>
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+   
+    body {
+      background-color: #f4f6f9;
+    }
+    .stat-box {
+      border-radius: 0.5rem;
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .navbar-brand span {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Edu<span>Portal</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+
+    <div class="bg-primary text-white rounded-4 p-4 p-md-5 mb-4">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="fw-bold">Welcome back, Academic Developer!</h1>
+          <p class="mb-4 opacity-75">
+            This reference implementation demonstrates a self-guided workflow using the
+            Bootstrap 5.3 grid layout, advanced system fonts, pastel cards, and navigation flow.
+          </p>
+          <a href="#registration" class="btn btn-light fw-semibold me-2">Take Syllabus</a>
+          <a href="#courses" class="btn btn-outline-light">View Courses</a>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="row g-4" id="courses">
+
+      <div class="col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-white fw-semibold">Current Courses</div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Bootstrap 5 Component Mastery
+              <span class="badge bg-primary rounded-pill">Active</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Responsive Layout Basics
+              <span class="badge bg-success rounded-pill">Passed</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Accessible Forms &amp; Audit
+              <span class="badge bg-warning text-dark rounded-pill">In progress</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-white fw-semibold">Upcoming Deadlines</div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="text-muted small">Due in 5 days</span>
+              <span class="badge bg-info text-dark">Low</span>
+            </div>
+            <h6 class="mb-1">Accessible Navbar Audit</h6>
+            <p class="text-muted small mb-3">Due next week</p>
+            <a href="#" class="btn btn-dark btn-sm w-100">View All Tasks</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-header bg-dark text-white fw-semibold">Academic Overview</div>
+          <div class="card-body">
+            <div class="row g-2 text-center">
+              <div class="col-6">
+                <div class="stat-box bg-light">
+                  <div class="fs-4 fw-bold text-primary">4.8</div>
+                  <div class="small text-muted">CURRENT GPA</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box bg-light">
+                  <div class="fs-4 fw-bold text-primary">12</div>
+                  <div class="small text-muted">PASSED</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box bg-light">
+                  <div class="fs-4 fw-bold text-warning">2</div>
+                  <div class="small text-muted">ACTIVE</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat-box bg-light">
+                  <div class="fs-4 fw-bold text-success">98%</div>
+                  <div class="small text-muted">ATTENDANCE</div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline-dark btn-sm w-100 mt-3">Download Transcript</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm mt-4">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h5 class="card-title mb-0">Bootstrap 5 Component Mastery</h5>
+          <span class="badge bg-primary">In progress</span>
+        </div>
+        <p class="text-muted mb-3">Learn to build responsive layouts using grid, cards, and utility classes.</p>
+        <!-- progress + progress-bar — готовый компонент Bootstrap для полос прогресса -->
+        <div class="progress" style="height: 8px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 65%"
+               aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="text-end small text-muted mt-1">65% complete</div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm mt-4" id="registration">
+      <div class="card-body p-4">
+        <h5 class="card-title fw-bold">Course Registration &amp; Audit</h5>
+        <p class="text-muted">Please complete the configuration profile below to assign student groups and resources.</p>
+
+        <form class="row g-3 mt-2">
+
+          <h6 class="text-uppercase text-muted small fw-bold mt-2">Personal Information</h6>
+
+          <div class="col-md-6">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Jane Doe">
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="jane@example.com">
+          </div>
+          <div class="col-md-6">
+            <label for="studentId" class="form-label">Student / Faculty ID</label>
+            <input type="text" class="form-control" id="studentId" placeholder="EDU-00214">
+          </div>
+          <div class="col-md-6">
+            <label for="enrollDate" class="form-label">Enrollment Date</label>
+            <input type="date" class="form-control" id="enrollDate">
+          </div>
+
+          <h6 class="text-uppercase text-muted small fw-bold mt-4">Course Preferences</h6>
+
+          <div class="col-md-6">
+            <label for="devField" class="form-label">Primary Development Field</label>
+            <select id="devField" class="form-select">
+              <option selected disabled>Choose a pathway...</option>
+              <option>Frontend Development</option>
+              <option>Backend Development</option>
+              <option>UI/UX Design</option>
+              <option>Full-Stack Development</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label d-block">Years of Experience</label>
+            <div class="btn-group w-100" role="group" aria-label="Years of experience">
+              <input type="radio" class="btn-check" name="experience" id="exp1" autocomplete="off">
+              <label class="btn btn-outline-primary" for="exp1">0-1</label>
+
+              <input type="radio" class="btn-check" name="experience" id="exp2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="exp2">1-3</label>
+
+              <input type="radio" class="btn-check" name="experience" id="exp3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="exp3">3+</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="goals" class="form-label">Statement of Academic Goals</label>
+            <textarea class="form-control" id="goals" rows="3"
+              placeholder="Briefly describe what you hope to achieve in this program..."></textarea>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="ack">
+              <label class="form-check-label" for="ack">
+                I acknowledge the community code of conduct and honor code requirements.
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-content-end gap-2 mt-4">
+            <button type="reset" class="btn btn-outline-secondary">Reset Form</button>
+            <button type="submit" class="btn btn-primary">Submit Registration</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <footer class="text-center text-muted small py-4 mt-4">
+      &copy; 2026 EduPortal. Built with Bootstrap 5.
+    </footer>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
