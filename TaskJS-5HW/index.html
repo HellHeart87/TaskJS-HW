@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Сортування масивів</title>
+</head>
+<body>
+    <h1>Демонстрація сортувань</h1>
+    <button id="runBtn">Запустити</button>
+    <pre id="output"></pre>
+
+    <script src="Task.js"></script>
+    <script>
+        document.getElementById('runBtn').addEventListener('click', () => {
+            const arr = [5, 3, 8, 1, 9, 2];
+            const sorted = bubbleSort([...arr]);
+            document.getElementById('output').textContent =
+                `Вхідний масив: ${arr}\nВідсортований: ${sorted}`;
+        });
+    </script>
+</body>
+</html>
