@@ -6,7 +6,6 @@ function bubbleSort(arr) {
     
     for (let j = 0; j < n - 1 - i; j++) {
       if (arr[j] > arr[j + 1]) {
-        // меняем местами
         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
         swapped = true;
       }
